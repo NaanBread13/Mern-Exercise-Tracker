@@ -110,10 +110,9 @@ export default class EditExercise extends Component {
                         onChange={this.onChangeUsername}>
                             {
                                 this.state.users.map(function(user) {
-                                    return <option> 
-                                    key={user} 
-                                    value={user}>{user}
-                                    </option>;
+                                    return (<option key={user} 
+                                        value={user}>{user} 
+                                    </option>);
                                 })
                             }
                         </select>
@@ -149,6 +148,6 @@ export default class EditExercise extends Component {
                     </div>
                 </form>
             </div>
-        );
+        )
     }
 }
